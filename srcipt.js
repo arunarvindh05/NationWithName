@@ -85,7 +85,7 @@ async function getDetails(name) {
                 var article1=document.createElement('article')
                 article1.className='card fl-left'
                 var section1=document.createElement('section')
-                section1.className='date'
+                section1.className='card-coun'
                 var span1=document.createElement('span')
                 span1.className='country'
                 var gap3=document.createElement('BR')
