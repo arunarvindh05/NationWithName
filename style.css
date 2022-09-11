@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+    margin: 0;
+    padding: 5px;
+    border: 0;
+    box-sizing: border-box
+}
+
+body {
+    background-color: #dadde6;
+    font-family: arial
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 900;
+    border-left: 10px solid #fec500;
+    padding-left: 10px;
+    margin-bottom: 30px;
+    
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-group{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+row {
+    overflow: hidden
+}
+
+.card {
+    display: table-row;
+    width: 33%;
+    background-color: #fff;
+    color: #989898;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    position: relative
+}
+
+.card+.card {
+    margin-left: 2%
+}
+
+.date {
+    display: table-cell;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    border-right: 2px dashed #dadde6
+}
+
+
+
+
+.card-cont {
+    display: table-cell;
+    width: 75%;
+    font-size: 85%;
+    padding: 10px 10px 30px 5px
+}
+
+.card-cont h3 {
+    color: #3C3C3C;
+    font-size: 130%
+}
+
+
+
+.card-cont>div {
+    display: table-row
+}
+
+
+.card-cont .even-info p {
+    display: table-cell
+}
+
+.card-cont .even-info i {
+    padding: 5% 5% 0 0
+}
+
+.card-cont .even-info p {
+    padding: 20px;
+}
+
+
+
+@media screen and (max-width: 860px) {
+    .card {
+        display: block;
+        float: none;
+        width: 100%;
+        margin-bottom: 10px
+    }
+    .card+.card {
+        margin-left: 0
+    }
+    .card-cont .even-info {
+        font-size: 75%
+    }
+    .input-group{
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
