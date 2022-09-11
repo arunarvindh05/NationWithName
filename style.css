@@ -97,14 +97,7 @@ row {
 
 
 .card-cont .even-info p {
-    display: table-cell
-}
-
-.card-cont .even-info i {
-    padding: 5% 5% 0 0
-}
-
-.card-cont .even-info p {
+    display: table-cell;
     padding: 20px;
 }
 
