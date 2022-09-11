@@ -74,8 +74,9 @@ async function getDetails(name) {
             var gap2=document.createElement('BR')
             mainDiv.append(gap2)
             var row=document.createElement('div')
-                row.className='row'
-            countries.slice(0, 2).forEach(element => {
+            row.className='row'
+            let countriesMain =  countries.filter((count)=>count.country_id)//to filter not empty country code
+            countriesMain.slice(0, 2).forEach(element => {
                 let CountryDetail = countryInformation.filter((country)=>country.alpha2Code===element.country_id)
                 console.log(CountryDetail)
                 console.log(element.country_id)
